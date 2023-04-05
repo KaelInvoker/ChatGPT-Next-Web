@@ -115,9 +115,12 @@ function _Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>智能助理</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            连接未来，从现在开始.
+          </div>
+          <div className={styles["desc"]}>
+            本站有全网最新最全chatGPT教程、行业大佬各种一手资料及各种副业教程，欢迎加我微信kaerforever
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
@@ -155,11 +158,6 @@ function _Home() {
                 }}
                 shadow
               />
-            </div>
-            <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank">
-                <IconButton icon={<GithubIcon />} shadow />
-              </a>
             </div>
           </div>
           <div>
