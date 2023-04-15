@@ -41,10 +41,15 @@ const tw: LocaleType = {
     Title: "上下文記憶 Prompt",
     EmptyContent: "尚未記憶",
     Copy: "複製全部",
+    Send: "發送記憶",
+    Reset: "重置對話",
+    ResetConfirm: "重置後將清空當前對話記錄以及歷史記憶，確認重置？",
   },
   Home: {
     NewChat: "新的對話",
     DeleteChat: "確定要刪除選取的對話嗎？",
+    DeleteToast: "已刪除對話",
+    Revert: "撤銷",
   },
   Settings: {
     Title: "設定",
@@ -53,6 +58,12 @@ const tw: LocaleType = {
       ClearAll: "清除所有數據",
       ResetAll: "重置所有設定",
       Close: "關閉",
+      ConfirmResetAll: {
+        Confirm: "Are you sure you want to reset all configurations?",
+      },
+      ConfirmClearAll: {
+        Confirm: "Are you sure you want to reset all chat?",
+      },
     },
     Lang: {
       Name: "Language",
@@ -62,6 +73,8 @@ const tw: LocaleType = {
         tw: "繁體中文",
         es: "Español",
         it: "Italiano",
+        tr: "Türkçe",
+        jp: "日本語",
       },
     },
     Avatar: "大頭貼",
@@ -106,8 +119,8 @@ const tw: LocaleType = {
     },
     Usage: {
       Title: "帳戶餘額",
-      SubTitle(used: any) {
-        return `本月已使用 $${used}`;
+      SubTitle(used: any, total: any) {
+        return `本月已使用 $${used}，订阅总额 $${total}`;
       },
       IsChecking: "正在檢查…",
       Check: "重新檢查",
@@ -139,9 +152,9 @@ const tw: LocaleType = {
     Prompt: {
       History: (content: string) =>
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
-      Topic: "直接返回這句話的簡要主題，無須解釋，若無主題，請直接返回「閒聊」",
+      Topic: "Summarise the conversation in a short and concise eye-catching title that instantly conveys the main topic. Use as few words as possible. Use the language used in the enquiry, e.g. use English for English enquiry, use zh-hant for traditional chinese enquiry. Don't use quotation marks at the beginning and the end.",
       Summarize:
-        "簡要總結一下你和用戶的對話，作為後續的上下文提示 prompt，且字數控制在 200 字以內",
+        "Summarise the conversation in at most 250 tokens for continuing the conversation in future. Use the language used in the conversation, e.g. use English for English conversation, use zh-hant for traditional chinese conversation.",
     },
     ConfirmClearAll: "確認清除所有對話、設定數據？",
   },
