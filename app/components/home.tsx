@@ -172,7 +172,10 @@ function _Home() {
             连接未来，从现在开始.
           </div>
           <div className={styles["desc"]}>
-            本站有全网最新最全chatGPT教程、行业大佬各种一手资料及各种副业教程，欢迎加我微信kaerforever
+            本站有全网最新最全chatGPT教程，内置上百条提示词条，输入/即可打开并支持搜索。如有问题，欢迎加我微信
+            <a href="https://tvax1.sinaimg.cn/large/007vRYyGly1hd0vmhturnj30o00zrmyx.jpg">
+              kaerforever
+            </a>
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
