@@ -8,8 +8,8 @@ import { IconButton } from "./button";
 import styles from "./home.module.scss";
 
 import SettingsIcon from "../icons/settings.svg";
-import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
+import Image from "next/image";
 
 import BotIcon from "../icons/bot.svg";
 import AddIcon from "../icons/add.svg";
@@ -172,10 +172,14 @@ function _Home() {
             连接未来，从现在开始.
           </div>
           <div className={styles["desc"]}>
-            本站有全网最新最全chatGPT教程，内置上百条提示词条，输入/即可打开并支持搜索。如有问题，欢迎加我微信
-            <a href="https://tvax1.sinaimg.cn/large/007vRYyGly1hd0vmhturnj30o00zrmyx.jpg">
-              kaerforever
-            </a>
+            本站有全网最新最全chatGPT教程，内置上百条提示词条，输入/即可打开并支持搜索。如有问题，欢迎咨询
+          </div>
+          <div className={styles["code-container"]}>
+            <Image
+              src={require("../icons/wx_code.jpg")}
+              alt=""
+              className={styles["code"]}
+            />
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
